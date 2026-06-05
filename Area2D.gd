@@ -5,7 +5,7 @@ var speed
 export (PackedScene) var EXPLOSION
 
 func _ready():
-	print("borrar")
+
 	$AnimatedSprite.play("default")
 	speed = GLOBAL.random(20, 60)
 	

@@ -116,58 +116,62 @@ frame_1/delay_sec = 0.0
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = -691.0
 script = ExtResource( 4 )
 
-[node name="CenterContainer" type="CenterContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -20.0
-margin_top = -20.0
-margin_right = 20.0
-margin_bottom = 20.0
-
-[node name="Sprite" type="Sprite" parent="CenterContainer"]
-position = Vector2( 18, 20 )
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 168, 300 )
 texture = ExtResource( 1 )
 
-[node name="Sprite2" type="Sprite" parent="CenterContainer"]
-position = Vector2( 20, 20 )
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 168, 300 )
 texture = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_top = 0.5
 anchor_right = 1.0
-anchor_bottom = 0.5
+anchor_bottom = 1.0
+rect_min_size = Vector2( 64, 0 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 1024.0
+margin_top = 268.0
+margin_right = 333.0
+margin_bottom = 332.0
+rect_min_size = Vector2( 64, 64 )
 alignment = 1
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="VBoxContainer/HBoxContainer"]
-position = Vector2( 513, 5 )
+position = Vector2( 96, 35 )
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 6 )
 frame = 2
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="VBoxContainer/HBoxContainer"]
-position = Vector2( 447, 5 )
+position = Vector2( 29, 35 )
 frames = SubResource( 12 )
 frame = 4
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="VBoxContainer/HBoxContainer"]
-position = Vector2( 578, 5 )
+position = Vector2( 162, 35 )
 frames = SubResource( 18 )
 frame = 2
 
 [node name="Button" type="Button" parent="."]
-margin_left = 570.0
-margin_top = 369.0
-margin_right = 608.0
-margin_bottom = 401.0
+anchor_left = 0.657658
+anchor_top = 0.085
+anchor_right = 0.657658
+anchor_bottom = 0.085
+margin_top = 318.0
+margin_right = 38.0
+margin_bottom = 350.0
 icon = SubResource( 19 )
 flat = true
-icon_align = 1
+align = 0
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

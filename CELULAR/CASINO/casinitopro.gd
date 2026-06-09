@@ -27,6 +27,9 @@ func _physics_process(delta):
 			$Button.disabled=false
 		c=0
 
+func _input(event):
+	if event.is_action_pressed("ui_home"):
+		get_tree().change_scene("res://CELULAR/CELULAR.tscn")
 
 func _on_Button_pressed():
 	ppp=true

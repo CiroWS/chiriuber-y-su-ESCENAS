@@ -50,7 +50,7 @@ animations = [ {
 radius = 8.0
 height = 14.0
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="KinematicBody2D" type="KinematicBody2D" groups=["player"]]
 scale = Vector2( 0.974186, 0.985029 )
 script = ExtResource( 1 )
 

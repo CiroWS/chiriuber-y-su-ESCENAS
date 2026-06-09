@@ -15,6 +15,7 @@ var angulo_giro_actual = 0.0
 
 var is_player_on = false
 
+
 func _ready():
 	if datos and datos is DatosAuto:
 		sprite.texture = datos.textura_sprite

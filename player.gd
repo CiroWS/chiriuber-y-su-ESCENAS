@@ -64,3 +64,5 @@ func _input(event):
 	if event.is_action_released("correr"):
 		SPEED=100
 		$AnimatedSprite.speed_scale=1
+	if event.is_action_pressed("accion"):
+		print("entrar")
